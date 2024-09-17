@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+}
+.navbar {
+    height: 58px;
+    width: 100%;
+    background: rgb(43, 42, 42);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar > div {
+    margin: 20px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+/* :nth-child() - selecionar um item ex:`:nth-child(1)`; :last-child - o último elemento. */
+div:last-child a:last-child { 
+    color: black;
+    background: white;
+    padding: 8px 20px 8px 20px;
+    border: 5px solid white;
+    border-radius: 50px;
+    transition: background 0.3s, border-color 0.3s;
+}
+div:last-child a:last-child:hover {
+    background: gray;
+    border: 5px solid gray;
+    color: white;
+}
+.container {
+    background: paleturquoise;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0px 20px 0px 20px;
+}
+.titulo {
+    background: gray;
+    padding: 15px;
+}
+.article {
+    display: flex;
+}
+.left-side {
+    width: 58%;
+    height: 20rem;
+    background: red;
+    padding: 15px;
+}
+.left-side h1 {
+    margin: 0;
+}
+.right-side {
+    background: green;
+    width: 42%;
+    height: 20rem;
+    padding: 15px;
+}
+.right-side h1 {
+    margin: 0;
+}
+.full-text {
+    background: purple;
+    padding: 15px;
+}
+.full-text h1 {
+    margin: 0;
+}
+.footer {
+    height: 45px;
+    width: 55%;
+    background: rgb(43, 42, 42);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 45%;
+    color: white;
+}
+@media (max-width: 1315px) {
+    .left-side {
+        height: 25rem;
+    }
+}
+@media (max-width: 1315px) {
+    .right-side {
+        height: 25rem;
+    }
+}
+@media (max-width: 1052px) {
+    .left-side {
+        height: 35rem;
+    }
+}
+@media (max-width: 1052px) {
+    .right-side {
+        height: 35rem;
+    }
+}
+@media (max-width: 773px) {
+    .article {
+        display: block;
+    }
+    .left-side {
+        width: auto;
+    }
+    .right-side {
+        width: auto;
+    }
+}
