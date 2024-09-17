@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flexbox</title>
+        <style>
+            .conteiner {
+                width: 100%;
+                height: 100%;
+                margin: 15px;
+            }
+            .grafico {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .box {
+                width: 250px;
+                height: 250px;
+                border: 2.5px solid rgb(70, 64, 64);
+                border-radius: 8px;
+                background: gray;
+                margin: 20px;
+            }
+            .four {
+                width: 130px;
+                height: 130px;
+            }
+            #salmao {
+                background: tomato;
+                width: 750px;
+                height: 290px;
+                margin: 10px;
+                padding: 40px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: nowrap;
+            }
+            .t1 {
+                width: 65%;
+            }
+            #lilas {
+                background: orchid;
+                width: 750px;
+                height: 290px;
+                margin: 10px;
+                padding: 40px;
+            }
+            #azul {
+                background: slateblue;
+                width: 750px;
+                height: 290px;
+                margin: 10px;
+                padding: 40px;
+            }
+            #rosa {
+                background: fuchsia;
+                width: 770px;
+                height: 360px;
+                margin: 10px;
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 10px;
+            }
+            #limao {
+                background: rgb(126, 252, 0);
+                width: 700px;
+                height: 290px;
+                margin: 10px;
+                padding: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="conteiner">
+            <div class="grafico">
+                <div id="salmao">
+                    <div class="text t1">
+                        <h1>Computação Quântica</h1>
+                        <p>A computação quântica representa um avanço revolucionário no campo da tecnologia. Ao contrário dos computadores clássicos que utilizam bits para processamento de informações, os computadores quânticos usam qubits, que podem estar em estados superpostos e entrelaçados. Isso permite realizar cálculos extremamente complexos de forma exponencialmente mais rápida do que os computadores tradicionais. Embora ainda esteja em estágios iniciais de desenvolvimento, a computação quântica promete transformar áreas como criptografia, simulação molecular e otimização de algoritmos.</p>
+                    </div>
+                    <div class="box"></div>
+                </div>
+                <div id="lilas">
+                    <div class="text">
+                        <h1>Inteligência Artificial na Saúde</h1>
+                        <p>A aplicação da inteligência artificial (IA) na saúde está redefinindo diagnósticos, tratamentos e cuidados personalizados aos pacientes Algoritmos de aprendizado de máquina são capazes de analisar grandes volumes de dados clínicos, imagens médicas e históricos de pacientes para identificar padrões, prever doenças e recomendar terapias personalizadas. Isso não apenas melhora a precisão dos diagnósticos, mas também otimiza os recursos médicos, reduzindo custos e tempo de espera para tratamentos.</p>
+                    </div>
+                    <div class="box"></div>
+                </div>
+                <div id="azul">
+                    <div class="text">
+                        <h1>Realidade Aumentada no Comércio Eletrônico</h1>
+                        <p>A realidade aumentada (RA) está transformando a experiência de compra online ao permitir que os consumidores visualizem produtos em seu ambiente real antes de comprar Usando aplicativos de RA em smartphones ou óculos inteligentes, os usuários podem ver como móveis, roupas, acessórios e até mesmo carros ficariam em suas casas ou em si mesmos Essa tecnologia não apenas aumenta a confiança na compra, mas também reduz o número de devoluções, pois os consumidores têm uma melhor compreensão do produto antes de adquiri-lo.</p>
+                    </div>
+                    <div class="box"></div>
+                </div>
+                <div id="rosa">
+                    <div id="limao">
+                        <div class="text">
+                            <h1>Blockchain e Supply Chain
+                            </h1>
+                            <p>A tecnologia blockchain está sendo amplamente adotada para melhorar a transparência, eficiência e segurança nas cadeias de suprimentos globais. Ao usar um registro distribuído e imutável, as empresas podem rastrear cada etapa da jornada de um produto, desde a origem até o consumidor final, Isso ajuda a verificar a autenticidade, monitorar condições de transporte, reduzir fraudes e garantir conformidade regulatória. Além disso, contratos inteligentes baseados em blockchain automatizam processos de pagamento e gerenciamento de inventário, aumentando a eficiência operacional e reduzindo custos.</p>
+                        </div>
+                        <div class="box four"></div>
+                        <div class="box four"></div>
+                        <div class="box four"></div>
+                        <div class="box four"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
