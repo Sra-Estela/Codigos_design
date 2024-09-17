@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            color: white;
+        }
+        body {
+            background: rgb(27, 26, 26);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+        }
+        .conteiner {
+            background: rgba(43, 42, 42, 0.774);
+            height: 580px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .elem {
+            display: flex;
+            flex-direction: column;
+            align-content: flex-start;
+            flex-wrap: wrap;
+        }
+        form .pre {
+            width: 300px;
+            padding: 4px;
+            margin-block-end: 10px;
+            background: rgb(27, 26, 26);
+            border: 2px solid rgba(0, 0, 0, 0.486);
+            border-radius: 2px;
+        }
+        .pre:hover {
+            border-color: white;
+        }
+        .pre:focus {
+            border-color: purple;
+            outline: none;
+        }
+        .texto {
+            height: 100px;
+        }
+        #enviar {
+            background: rgb(74, 1, 116);
+            border: 1px solid rgba(0, 0, 0, 0);
+            width: 300px;
+            height: 45px;
+            margin-top: 20px;
+        }
+        #enviar:hover {
+            background: rgb(99, 31, 139);
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <h1>Meu Formulário 🔥</h1>
+        <div class="form1">
+            <form action="#" method="get" class="elem">
+                <input type="text" name="usuario" id="usuario" placeholder="Digite seu nome" class="pre"> 
+                <input type="email" name="email" id="email" placeholder="Digite seu melhor email" class="pre"> 
+                <input type="password" name="senha" id="senha" placeholder="Senha" class="pre"> 
+                <input type="password" name="senha" id="senha" placeholder="Repita sua senha" class="pre"> 
+                <textarea name="msg" id="msg" placeholder="Fale um pouco sobre você..." class="pre texto"></textarea>
+            </form>
+        </div>
+        <div class="form2">
+            <p>Sexo</p>
+            <form action="" method="get" class="opicoes">
+                <input type="radio" name="M" id="#"> Masculino
+                <input type="radio" name="F" id="#"> Feminino
+                <input type="radio" name="O" id="#"> Outro
+            </form>
+
+            <p>Quais são sua experiências</p>
+            <form action="" method="get" class="opicoes">
+                <input type="checkbox" name="html" id="html"> Html
+                <input type="checkbox" name="css" id="css"> CSS
+                <input type="checkbox" name="js" id="js"> JavaScript
+                <input type="checkbox" name="pho" id="pho"> PHO <br>
+                <input type="button" value="Enviar" id="enviar">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
