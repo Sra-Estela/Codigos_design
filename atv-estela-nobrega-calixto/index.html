@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .formulario {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            position: absolute;
+        }
+        .formulario #pre, textarea {
+            padding: 5px;
+            border: 1px solid rgb(128, 128, 128);
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        .inform {
+            margin: 32px 0px 0px 255px;
+            
+        }
+        .inform p {
+            margin: 6px;
+            font-size: 25px;
+        }
+        h1 {
+            font-size: 45px;
+        }
+        .preenchimento {
+            margin-top: 280px;
+        }
+        .preenchimento > form {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+        }
+        #enviar {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário 🔥</h1>
+    <form action="envia.php" method="get" class="formulario">
+        <input type="text" name="nome" id="pre" placeholder="Digite seu nome"> 
+        <input type="email" name="email" id="pre" placeholder="Digite seu melhor email"> 
+        <input type="password" name="senha" id="pre" placeholder="Senha"> 
+        <input type="password" name="checagem" id="pre" placeholder="Repita sua senha">
+        <textarea name="msg" id="msg" cols="27" rows="10" placeholder="Fale um pouco sobre você..."></textarea> 
+    </form>
+    <div class="inform">
+        <p>Nome deve ter no mínimo 3 caracteres</p>
+        <p>Digiti um email válido</p>
+        <p>Dogite uma senha com no miínimo 8 caracteres</p>
+        <p>Senhas devem ser compatíveis</p>
+    </div>
+    <div class="preenchimento">
+        <h3>Sexo</h3>
+        <form action="#">
+            <input type="radio" name="M" id="#"> Masculino <br>
+            <input type="radio" name="F" id="#"> Feminino <br>
+            <input type="radio" name="O" id="#"> Outro
+        </form>
+
+        <h3>Quais são suas experiências?</h3>
+        <form action="#">
+            <input type="checkbox" name="html" id="html"> Html <br>
+            <input type="checkbox" name="css" id="css"> CSS <br>
+            <input type="checkbox" name="js" id="js"> Javascript <br>
+            <input type="checkbox" name="pho" id="pho"> PHO <br>
+            <input type="button" value="Enviar" id="enviar">
+        </form>
+    </div>
+</body>
+</html>
