@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.cabecalho {
+    height: 50px;
+    width: 100vw;
+    background-color: gainsboro;
+    display: flex;
+    align-items: center;
+}
+button {
+    cursor: pointer;
+    width: 100px;
+    border-top: 1px solid rgb(204, 201, 201);
+    border-left: 1px solid rgb(204, 201, 201);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    border-right: 2px solid rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    margin-left: 10px;
+}
+button:hover {
+    background: gainsboro;
+}
+button > a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.galeria img {
+    width: 100%;
+    max-width: calc(33.33% - 10px);
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .galeria img {
+        max-width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .galeria img {
+        max-width: 100%;
+    }
+}

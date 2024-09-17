@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cabecalho {
+    height: 50px;
+    width: 100vw;
+    background-color: gainsboro;
+    display: flex;
+    align-items: center;
+}
+button {
+    cursor: pointer;
+    width: 100px;
+    border-top: 1px solid rgb(204, 201, 201);
+    border-left: 1px solid rgb(204, 201, 201);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    border-right: 2px solid rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    margin-left: 10px;
+}
+button:hover {
+    background: gainsboro;
+}
+button > a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header, .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 1rem;
+}
+
+.sidebar {
+    background-color: #ddd;
+    flex: 1;
+    padding: 1rem;
+}
+
+.content {
+    background-color: #bbb;
+    flex: 3;
+    padding: 1rem;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .conteudo-principal {
+        flex-direction: column;
+    }
+    .sidebar {
+        order: 2;
+    }
+    .content {
+        order: 1;
+    }
+}
